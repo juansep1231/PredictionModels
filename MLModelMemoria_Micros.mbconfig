@@ -1,0 +1,288 @@
+﻿{
+  "Scenario": "Regression",
+  "DataSource": {
+    "Version": 3,
+    "EscapeCharacter": "\"",
+    "ReadMultiLines": false,
+    "KeepDiacritics": false,
+    "KeepPunctuations": false,
+    "AllowQuoting": false,
+    "Type": "TabularFile",
+    "FilePath": "C:\\Users\\shotweif Geng\\Desktop\\Memoria_Micros_v2.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "Date",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Time",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "MemoriaUsada%",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.75006532316133767,
+        "RuntimeInSeconds": 5.023,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "Time"
+            ],
+            "InputColumnNames": [
+              "Time"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Date",
+            "OutputColumnName": "Date"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Time",
+              "Date"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 90,
+            "MinimumExampleCountPerLeaf": 34,
+            "NumberOfTrees": 150,
+            "MaximumBinCountPerFeature": 260,
+            "FeatureFraction": 0.99999999,
+            "LearningRate": 0.13875745307784218,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.74861459567403121,
+        "RuntimeInSeconds": 4.955,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "Time"
+            ],
+            "InputColumnNames": [
+              "Time"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Date",
+            "OutputColumnName": "Date"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Time",
+              "Date"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 91,
+            "MinimumExampleCountPerLeaf": 35,
+            "NumberOfTrees": 150,
+            "MaximumBinCountPerFeature": 261,
+            "FeatureFraction": 0.99999999,
+            "LearningRate": 0.13780094313778132,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.74853551192043677,
+        "RuntimeInSeconds": 4.932,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "Time"
+            ],
+            "InputColumnNames": [
+              "Time"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Date",
+            "OutputColumnName": "Date"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Time",
+              "Date"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 91,
+            "MinimumExampleCountPerLeaf": 34,
+            "NumberOfTrees": 148,
+            "MaximumBinCountPerFeature": 259,
+            "FeatureFraction": 0.998824343654021,
+            "LearningRate": 0.13608430887585279,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.74849877653560759,
+        "RuntimeInSeconds": 5.253,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "Time"
+            ],
+            "InputColumnNames": [
+              "Time"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Date",
+            "OutputColumnName": "Date"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Time",
+              "Date"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 100,
+            "MinimumExampleCountPerLeaf": 34,
+            "NumberOfTrees": 151,
+            "MaximumBinCountPerFeature": 257,
+            "FeatureFraction": 0.9972625549851083,
+            "LearningRate": 0.1405801830789819,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.7484844482312768,
+        "RuntimeInSeconds": 4.16,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "Time"
+            ],
+            "InputColumnNames": [
+              "Time"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Date",
+            "OutputColumnName": "Date"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Time",
+              "Date"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 68,
+            "MinimumExampleCountPerLeaf": 36,
+            "NumberOfTrees": 144,
+            "MaximumBinCountPerFeature": 198,
+            "FeatureFraction": 0.99999999,
+            "LearningRate": 0.14185049778793268,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "OneHotEncoding",
+      "e1": "FeaturizeText",
+      "e2": "Concatenate",
+      "e3": "FastTreeRegression",
+      "e4": "FastForestRegression",
+      "e5": "LightGbmRegression",
+      "e6": "LbfgsPoissonRegressionRegression",
+      "e7": "SdcaRegression"
+    },
+    "Schema": "e0 * e1 * e2 * (e3 + e4 + e5 + e6 + e7)",
+    "MetricName": "RSquared",
+    "ModelFilePath": "C:\\Users\\shotweif Geng\\source\\repos\\MemoriaMicro\\MemoriaMicro\\MLModelMemoria_Micros.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 5,
+  "TrainingOption": {
+    "Version": 2,
+    "Subsampling": false,
+    "Tuner": "eci-cfo",
+    "Type": "RegressionTrainingOption",
+    "TrainingTime": 1200,
+    "OptimizeMetric": "RSquared",
+    "LabelColumn": "MemoriaUsada%",
+    "AvailableTrainers": [
+      "SDCA",
+      "LBFGS",
+      "LGBM",
+      "FASTTREE",
+      "FASTFOREST"
+    ],
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "CrossValidationValidationOption",
+      "NumberOfFolds": 5
+    }
+  }
+}

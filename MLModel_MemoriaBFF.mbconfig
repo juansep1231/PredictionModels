@@ -1,0 +1,428 @@
+﻿{
+  "Scenario": "Regression",
+  "DataSource": {
+    "Type": "TabularFile",
+    "Version": 1,
+    "FilePath": "C:\\Users\\buche\\Downloads\\Memoria_BFF.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "Fecha",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Hora",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "MemoriaUsada%",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.88210040001668821,
+        "RuntimeInSeconds": 86.924,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "Fecha"
+            ],
+            "InputColumnNames": [
+              "Fecha"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Hora",
+            "OutputColumnName": "Hora"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Fecha",
+              "Hora"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 32767,
+            "MinimumExampleCountPerLeaf": 9,
+            "NumberOfTrees": 1668,
+            "MaximumBinCountPerFeature": 87,
+            "FeatureFraction": 0.5082069220318679,
+            "LearningRate": 0.99999977667298645,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.87588937082296814,
+        "RuntimeInSeconds": 111.357,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "Fecha"
+            ],
+            "InputColumnNames": [
+              "Fecha"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Hora",
+            "OutputColumnName": "Hora"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Fecha",
+              "Hora"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 234,
+            "MinimumExampleCountPerLeaf": 2,
+            "NumberOfTrees": 600,
+            "MaximumBinCountPerFeature": 1023,
+            "FeatureFraction": 0.99999999,
+            "LearningRate": 0.62226875498756673,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.87394995971486222,
+        "RuntimeInSeconds": 0.392,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e6",
+          "e0": {
+            "OutputColumnNames": [
+              "Fecha"
+            ],
+            "InputColumnNames": [
+              "Fecha"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Hora",
+            "OutputColumnName": "Hora"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Fecha",
+              "Hora"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 1.413445,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "LearningRate": 0.099999999999999978,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.87390339427061581,
+        "RuntimeInSeconds": 0.39,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e6",
+          "e0": {
+            "OutputColumnNames": [
+              "Fecha"
+            ],
+            "InputColumnNames": [
+              "Fecha"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Hora",
+            "OutputColumnName": "Hora"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Fecha",
+              "Hora"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 0.09379345,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "LearningRate": 0.099999999999999978,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.873884920687748,
+        "RuntimeInSeconds": 0.444,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e6",
+          "e0": {
+            "OutputColumnNames": [
+              "Fecha"
+            ],
+            "InputColumnNames": [
+              "Fecha"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Hora",
+            "OutputColumnName": "Hora"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Fecha",
+              "Hora"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 6.68538427,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "LearningRate": 0.099999999999999978,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "MemoriaUsada%",
+            "FeatureColumnName": "Features"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "OneHotEncoding",
+      "e1": "FeaturizeText",
+      "e2": "Concatenate",
+      "e3": "FastTreeRegression",
+      "e4": "FastForestRegression",
+      "e5": "LightGbmRegression",
+      "e6": "LbfgsPoissonRegressionRegression",
+      "e7": "SdcaRegression"
+    },
+    "Schema": "e0 * e1 * e2 * (e3 + e4 + e5 + e6 + e7)",
+    "MetricName": "RSquared",
+    "ModelFilePath": "C:\\Users\\buche\\source\\repos\\DataPredictionModels\\DataPredictionModels\\MLModel_MemoriaBFF.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 4,
+  "TrainingOption": {
+    "Version": 1,
+    "Type": "RegressionTrainingOption",
+    "TrainingTime": 1800,
+    "LabelColumn": "MemoriaUsada%",
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "CrossValidationValidationOption",
+      "NumberOfFolds": 5
+    }
+  }
+}

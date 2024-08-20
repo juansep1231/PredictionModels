@@ -1,0 +1,263 @@
+﻿{
+  "Scenario": "Regression",
+  "DataSource": {
+    "Version": 3,
+    "EscapeCharacter": "\"",
+    "ReadMultiLines": false,
+    "KeepDiacritics": false,
+    "KeepPunctuations": false,
+    "AllowQuoting": false,
+    "Type": "TabularFile",
+    "FilePath": "C:\\Users\\shotweif Geng\\Desktop\\Accesos_Produnet.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "Date",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Time",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Numero",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.94965669041785827,
+        "RuntimeInSeconds": 1.383,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e6",
+          "e0": {
+            "OutputColumnNames": [
+              "Time"
+            ],
+            "InputColumnNames": [
+              "Time"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Date",
+            "OutputColumnName": "Date"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Time",
+              "Date"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 0.09989145,
+            "L2Regularization": 0.24304603,
+            "LabelColumnName": "Numero",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.94965616703146394,
+        "RuntimeInSeconds": 1.421,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e6",
+          "e0": {
+            "OutputColumnNames": [
+              "Time"
+            ],
+            "InputColumnNames": [
+              "Time"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Date",
+            "OutputColumnName": "Date"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Time",
+              "Date"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 0.10084485,
+            "L2Regularization": 0.23044229,
+            "LabelColumnName": "Numero",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.94965570487874129,
+        "RuntimeInSeconds": 1.289,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e6",
+          "e0": {
+            "OutputColumnNames": [
+              "Time"
+            ],
+            "InputColumnNames": [
+              "Time"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Date",
+            "OutputColumnName": "Date"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Time",
+              "Date"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 0.1117514,
+            "L2Regularization": 0.28069386,
+            "LabelColumnName": "Numero",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.94965331368076666,
+        "RuntimeInSeconds": 1.327,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e6",
+          "e0": {
+            "OutputColumnNames": [
+              "Time"
+            ],
+            "InputColumnNames": [
+              "Time"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Date",
+            "OutputColumnName": "Date"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Time",
+              "Date"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 0.09890923,
+            "L2Regularization": 0.24206027,
+            "LabelColumnName": "Numero",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.94965310847306039,
+        "RuntimeInSeconds": 1.356,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e6",
+          "e0": {
+            "OutputColumnNames": [
+              "Time"
+            ],
+            "InputColumnNames": [
+              "Time"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Date",
+            "OutputColumnName": "Date"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Time",
+              "Date"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 0.10094801,
+            "L2Regularization": 0.24835683,
+            "LabelColumnName": "Numero",
+            "FeatureColumnName": "Features"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "OneHotEncoding",
+      "e1": "FeaturizeText",
+      "e2": "Concatenate",
+      "e3": "FastTreeRegression",
+      "e4": "FastForestRegression",
+      "e5": "LightGbmRegression",
+      "e6": "LbfgsPoissonRegressionRegression",
+      "e7": "SdcaRegression"
+    },
+    "Schema": "e0 * e1 * e2 * (e3 + e4 + e5 + e6 + e7)",
+    "MetricName": "RSquared",
+    "ModelFilePath": "C:\\Users\\shotweif Geng\\source\\repos\\MemoriaMicro\\MemoriaMicro\\MLModelAccesos_Produnet.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 5,
+  "TrainingOption": {
+    "Version": 2,
+    "Subsampling": false,
+    "Tuner": "eci-cfo",
+    "Type": "RegressionTrainingOption",
+    "TrainingTime": 300,
+    "OptimizeMetric": "RSquared",
+    "LabelColumn": "Numero",
+    "AvailableTrainers": [
+      "SDCA",
+      "LBFGS",
+      "LGBM",
+      "FASTTREE",
+      "FASTFOREST"
+    ],
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "CrossValidationValidationOption",
+      "NumberOfFolds": 5
+    }
+  }
+}
