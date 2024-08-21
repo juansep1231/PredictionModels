@@ -24,9 +24,6 @@ namespace DashboardModels
             [ColumnName(@"hora")]
             public string Hora { get; set; }
 
-            [LoadColumn(2)]
-            [ColumnName(@"uso_CPU%")]
-            public float Uso_CPU_ { get; set; }
 
         }
 
@@ -38,17 +35,6 @@ namespace DashboardModels
         #region model output class
         public class ModelOutput
         {
-            [ColumnName(@"fecha")]
-            public float[] Fecha { get; set; }
-
-            [ColumnName(@"hora")]
-            public float[] Hora { get; set; }
-
-            [ColumnName(@"uso_CPU%")]
-            public float Uso_CPU_ { get; set; }
-
-            [ColumnName(@"Features")]
-            public float[] Features { get; set; }
 
             [ColumnName(@"Score")]
             public float Score { get; set; }

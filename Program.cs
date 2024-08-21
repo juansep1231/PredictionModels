@@ -7,11 +7,11 @@ using Microsoft.OpenApi.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddPredictionEnginePool<MLModelAcdesoBancaMovil.ModelInput, MLModelAcdesoBancaMovil.ModelOutput>()
-    .FromFile("MLModelAcdesoBancaMovil.mlnet");
+builder.Services.AddPredictionEnginePool<MLModelAccesosBancaMovil.ModelInput, MLModelAccesosBancaMovil.ModelOutput>()
+    .FromFile("MLModelAccesosBancaMovil.mlnet");
 
-builder.Services.AddPredictionEnginePool<MLModelConsumoTarjetasDebito.ModelInput, MLModelConsumoTarjetasDebito.ModelOutput>()
-    .FromFile("MLModelConsumoTarjetasDebito.mlnet");
+builder.Services.AddPredictionEnginePool<MLModelTarjetasDebito.ModelInput, MLModelTarjetasDebito.ModelOutput>()
+    .FromFile("MLModelTarjetasDebito.mlnet"); 
 
 //MODELOS FER
 builder.Services.AddPredictionEnginePool<MLModel1BFF.ModelInput, MLModel1BFF.ModelOutput>()
@@ -29,6 +29,15 @@ builder.Services.AddPredictionEnginePool<MLModel_MemoriaBFF.ModelInput, MLModel_
 builder.Services.AddPredictionEnginePool<MLModelMemoria_Micros.ModelInput, MLModelMemoria_Micros.ModelOutput>()
     .FromFile("MLModelMemoria_Micros.mlnet");
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
 
 
 builder.Services.AddControllers();
@@ -60,6 +69,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowAll"); // Habilita CORS usando la política definida
 
 app.UseAuthorization();
 

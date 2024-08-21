@@ -23,10 +23,6 @@ namespace MemoriaMicro
             [ColumnName(@"Time")]
             public string Time { get; set; }
 
-            [LoadColumn(2)]
-            [ColumnName(@"MemoriaUsada%")]
-            public float MemoriaUsada_ { get; set; }
-
         }
 
         #endregion
@@ -37,17 +33,6 @@ namespace MemoriaMicro
         #region model output class
         public class ModelOutput
         {
-            [ColumnName(@"Date")]
-            public float[] Date { get; set; }
-
-            [ColumnName(@"Time")]
-            public float[] Time { get; set; }
-
-            [ColumnName(@"MemoriaUsada%")]
-            public float MemoriaUsada_ { get; set; }
-
-            [ColumnName(@"Features")]
-            public float[] Features { get; set; }
 
             [ColumnName(@"Score")]
             public float Score { get; set; }

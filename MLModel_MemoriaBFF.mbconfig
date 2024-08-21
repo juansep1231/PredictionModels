@@ -1,8 +1,13 @@
 ﻿{
   "Scenario": "Regression",
   "DataSource": {
+    "Version": 3,
+    "EscapeCharacter": "\"",
+    "ReadMultiLines": false,
+    "KeepDiacritics": false,
+    "KeepPunctuations": false,
+    "AllowQuoting": true,
     "Type": "TabularFile",
-    "Version": 1,
     "FilePath": "C:\\Users\\buche\\Downloads\\Memoria_BFF.csv",
     "Delimiter": ",",
     "DecimalMarker": ".",
@@ -14,7 +19,7 @@
         "ColumnDataFormat": "String",
         "IsCategorical": true,
         "Type": "Column",
-        "Version": 4
+        "Version": 5
       },
       {
         "ColumnName": "Hora",
@@ -22,7 +27,7 @@
         "ColumnDataFormat": "String",
         "IsCategorical": false,
         "Type": "Column",
-        "Version": 4
+        "Version": 5
       },
       {
         "ColumnName": "MemoriaUsada%",
@@ -30,7 +35,7 @@
         "ColumnDataFormat": "Single",
         "IsCategorical": false,
         "Type": "Column",
-        "Version": 4
+        "Version": 5
       }
     ]
   },
@@ -413,9 +418,10 @@
     "ModelFilePath": "C:\\Users\\buche\\source\\repos\\DataPredictionModels\\DataPredictionModels\\MLModel_MemoriaBFF.mlnet"
   },
   "Type": "TrainingConfig",
-  "Version": 4,
+  "Version": 5,
   "TrainingOption": {
-    "Version": 1,
+    "Version": 2,
+    "Subsampling": false,
     "Type": "RegressionTrainingOption",
     "TrainingTime": 1800,
     "LabelColumn": "MemoriaUsada%",

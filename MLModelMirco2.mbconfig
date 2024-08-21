@@ -1,8 +1,13 @@
 ﻿{
   "Scenario": "Regression",
   "DataSource": {
+    "Version": 3,
+    "EscapeCharacter": "\"",
+    "ReadMultiLines": false,
+    "KeepDiacritics": false,
+    "KeepPunctuations": false,
+    "AllowQuoting": true,
     "Type": "TabularFile",
-    "Version": 1,
     "FilePath": "C:\\Users\\ASUS\\Desktop\\CPU_MicroP.csv",
     "Delimiter": ";",
     "DecimalMarker": ",",
@@ -14,7 +19,7 @@
         "ColumnDataFormat": "String",
         "IsCategorical": true,
         "Type": "Column",
-        "Version": 4
+        "Version": 5
       },
       {
         "ColumnName": "hora",
@@ -22,7 +27,7 @@
         "ColumnDataFormat": "String",
         "IsCategorical": true,
         "Type": "Column",
-        "Version": 4
+        "Version": 5
       },
       {
         "ColumnName": "uso_CPU%",
@@ -30,7 +35,7 @@
         "ColumnDataFormat": "Single",
         "IsCategorical": false,
         "Type": "Column",
-        "Version": 4
+        "Version": 5
       }
     ]
   },
@@ -402,9 +407,10 @@
     "ModelFilePath": "C:\\Users\\ASUS\\source\\repos\\ConsoleApp1\\ConsoleApp1\\MLModelMirco2.mlnet"
   },
   "Type": "TrainingConfig",
-  "Version": 4,
+  "Version": 5,
   "TrainingOption": {
-    "Version": 1,
+    "Version": 2,
+    "Subsampling": false,
     "Type": "RegressionTrainingOption",
     "TrainingTime": 3600,
     "OptimizeMetric": "RMSE",

@@ -24,10 +24,6 @@ namespace DashboardModels
             [ColumnName(@"Hora")]
             public string Hora { get; set; }
 
-            [LoadColumn(2)]
-            [ColumnName(@"MemoriaUsada%")]
-            public float MemoriaUsada_ { get; set; }
-
         }
 
         #endregion
@@ -38,17 +34,6 @@ namespace DashboardModels
         #region model output class
         public class ModelOutput
         {
-            [ColumnName(@"Fecha")]
-            public float[] Fecha { get; set; }
-
-            [ColumnName(@"Hora")]
-            public float[] Hora { get; set; }
-
-            [ColumnName(@"MemoriaUsada%")]
-            public float MemoriaUsada_ { get; set; }
-
-            [ColumnName(@"Features")]
-            public float[] Features { get; set; }
 
             [ColumnName(@"Score")]
             public float Score { get; set; }

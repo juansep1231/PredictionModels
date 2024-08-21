@@ -11,13 +11,13 @@
     <PackageReference Include="Plotly.NET" Version="3.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
-  <ItemGroup Label="MLModelConsumoTarjetasDebito">
-    <None Include="MLModelConsumoTarjetasDebito.mlnet">
+  <ItemGroup Label="MLModelTarjetasDebito">
+    <None Include="MLModelTarjetasDebito.mlnet">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup Label="MLModelAcdesoBancaMovil">
-    <None Include="MLModelAcdesoBancaMovil.mlnet">
+  <ItemGroup Label="MLModelAccesosBancaMovil">
+    <None Include="MLModelAccesosBancaMovil.mlnet">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

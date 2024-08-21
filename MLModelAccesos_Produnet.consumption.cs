@@ -23,9 +23,6 @@ namespace DashboardModels
             [ColumnName(@"Time")]
             public string Time { get; set; }
 
-            [LoadColumn(2)]
-            [ColumnName(@"Numero")]
-            public float Numero { get; set; }
 
         }
 
@@ -37,17 +34,6 @@ namespace DashboardModels
         #region model output class
         public class ModelOutput
         {
-            [ColumnName(@"Date")]
-            public float[] Date { get; set; }
-
-            [ColumnName(@"Time")]
-            public float[] Time { get; set; }
-
-            [ColumnName(@"Numero")]
-            public float Numero { get; set; }
-
-            [ColumnName(@"Features")]
-            public float[] Features { get; set; }
 
             [ColumnName(@"Score")]
             public float Score { get; set; }
