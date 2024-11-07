@@ -29,6 +29,12 @@ builder.Services.AddPredictionEnginePool<MLModel_MemoriaBFF.ModelInput, MLModel_
 builder.Services.AddPredictionEnginePool<MLModelMemoria_Micros.ModelInput, MLModelMemoria_Micros.ModelOutput>()
     .FromFile("MLModelMemoria_Micros.mlnet");
 
+builder.Services.AddPredictionEnginePool<Servidores.ModelInput, Servidores.ModelOutput>()
+    .FromFile("Servidores.mlnet");
+
+builder.Services.AddPredictionEnginePool<MLModel_DebitoActualizado.ModelInput, MLModel_DebitoActualizado.ModelOutput>()
+    .FromFile("MLModel_DebitoActualizado.mlnet");
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -41,6 +47,8 @@ builder.Services.AddCors(options =>
 
 
 builder.Services.AddControllers();
+// Registrar IHttpClientFactory
+builder.Services.AddHttpClient();
 
 builder.Services.AddSwaggerGen(c =>
 {

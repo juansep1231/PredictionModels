@@ -56,6 +56,7 @@ namespace MemoriaMicro
             return featurePFI;
         }
 
+         
         /// <summary>
         /// R Squared is a measure of variation between the values predicted by the model and the true values. 
         /// In a "perfect" model, there would be no variation between predictions and true values. 
