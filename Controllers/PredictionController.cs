@@ -161,7 +161,7 @@ public class PredictionController : ControllerBase
             if (microMemoryscore.Score > maxMicroMemoryScore)
             {
                 maxMicroMemoryScore = microMemoryscore.Score;
-                maxMicroMemoryHour = hour.horaCompleta; // Guardar la hora del máximo
+                maxMicroMemoryHour = hour.horaCompleta; // Guardar la hora del máximooooo
             }
         }
 
